@@ -151,6 +151,8 @@ Error message and password prompt
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-journal</li>
 
+<li>$:/config/RelinkOnRename</li>
+
 <li>$:/core</li>
 
 <li>$:/DefaultTiddlers</li>
@@ -185,6 +187,12 @@ Error message and password prompt
 
 <li>$:/state/toc/Contents-Algebra-1843068618</li>
 
+<li>$:/state/toc/Contents-Analysis-1843068618</li>
+
+<li>$:/state/toc/Contents-Logic-1843068618</li>
+
+<li>$:/state/toc/Contents-Probability Theory-1843068618</li>
+
 <li>$:/status/RequireReloadDueToPluginChange</li>
 
 <li>$:/StoryList</li>
@@ -213,21 +221,33 @@ Error message and password prompt
 
 <li>Contents</li>
 
-<li>Cyclotomic Polynomials</li>
+<li>Convex Function</li>
 
-<li>Example: sets not Lebesgue measurable</li>
+<li>Cyclotomic Polynomials</li>
 
 <li>Fields</li>
 
 <li>Fundamental Theorem of Algebra</li>
 
+<li>Gaussian but not jointly Gaussian</li>
+
+<li>Gaussian Distributions</li>
+
 <li>Harmonic Conjugate</li>
+
+<li>Jensen's inequality</li>
 
 <li>Logic</li>
 
 <li>Module</li>
 
+<li>Negative Binomial Distributions</li>
+
+<li>Probability Theory</li>
+
 <li>Riemann Surfaces</li>
+
+<li>Sets not Lebesgue measurable</li>
 
 <li>Tensor Product of Vector Spaces</li>
 
@@ -267,6 +287,9 @@ Error message and password prompt
 </div>
 <div created="20200917205422389" modified="20200917205422389" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-journal">
 <pre>show</pre>
+</div>
+<div created="20210801132640767" modified="20210801132640767" title="$:/config/RelinkOnRename">
+<pre>yes</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="TiddlyWiki5 core" list="readme" name="Core" plugin-priority="0" plugin-type="plugin" title="$:/core" type="application/json" version="5.1.22">
 <pre>{
@@ -9864,10 +9887,19 @@ Error message and password prompt
 <div created="20210714124940994" modified="20210714125506250" title="$:/state/toc/Contents-Algebra-1843068618">
 <pre>close</pre>
 </div>
+<div created="20210805173340069" modified="20210805173340069" title="$:/state/toc/Contents-Analysis-1843068618">
+<pre>open</pre>
+</div>
+<div created="20210729021721158" modified="20210729021722565" title="$:/state/toc/Contents-Logic-1843068618">
+<pre>close</pre>
+</div>
+<div created="20210805174248187" modified="20210805174254765" title="$:/state/toc/Contents-Probability Theory-1843068618">
+<pre>close</pre>
+</div>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div list="[[Axiom of Choice]] Logic [[Example: sets not Lebesgue measurable]]" title="$:/StoryList">
+<div created="20210805173354411" list="[[Negative Binomial Distributions]] [[Gaussian but not jointly Gaussian]] [[Gaussian Distributions]]" modified="20210805173354411" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200917162137817" modified="20200917162137817" title="$:/temp/HidePluginWarning">
@@ -10130,11 +10162,15 @@ Equivalent to tensor product definition.
 
 &lt;/div&gt;</pre>
 </div>
+<div created="20210801132818813" modified="20210801133504461" tags="" title="Convex Function">
+<pre>A function $$F:(a,b)\rightarrow \R$$, $$-\infty\leq a &lt; b\leq \infty$$ is a //convex// function if $$
+F(\lambda s + (1-\lambda)t) \leq \lambda F(s) + (1-\lambda) F(t)
+$$ for every $$s,t\in (a,b)$$ and $$\lambda\in (0,1)$$.
+
+</pre>
+</div>
 <div created="20201222152353034" modified="20201222152454020" tags="" title="Cyclotomic Polynomials">
 <pre>$$z^n - 1$$</pre>
-</div>
-<div created="20210728194338422" modified="20210728195220684" tags="" title="Example: sets not Lebesgue measurable">
-<pre></pre>
 </div>
 <div created="20210714134058485" modified="20210714134114768" tags="Algebra" title="Fields">
 <pre></pre>
@@ -10152,6 +10188,19 @@ Equivalent to tensor product definition.
 
 * No purely algebraic proof. 
 * Not fundamental to modern algebra. 
+</pre>
+</div>
+<div created="20210805173545999" modified="20210805174301553" tags="[[Gaussian Distributions]]" title="Gaussian but not jointly Gaussian">
+<pre>&lt;&lt;&lt;
+&quot;almost all&quot; joint distributions with normal marginals are NOT bivariate normal
+&lt;&lt;&lt; From this [ext[thread| https://stats.stackexchange.com/questions/30159/is-it-possible-to-have-a-pair-of-gaussian-random-variables-for-which-the-joint-d]]
+
+!! Examples
+# Let $$X\sim \mathcal{N}(0,1)$$ and $$Y:= -X$$. 
+# </pre>
+</div>
+<div created="20210805173226964" modified="20210805173544113" tags="[[Probability Theory]]" title="Gaussian Distributions">
+<pre>
 </pre>
 </div>
 <div created="20201222191414356" modified="20201226022859598" tags="" title="Harmonic Conjugate">
@@ -10180,13 +10229,25 @@ $$
 $$
 Finding the primitive of $$\frac{\partial f}{\partial z}$$ is equivalent to finding harmonic conjugate of $$u$$.</pre>
 </div>
+<div created="20210801132733014" modified="20210801132815604" tags="Analysis" title="Jensen's inequality">
+<pre></pre>
+</div>
 <div created="20210728195225679" modified="20210728195234409" tags="Contents" title="Logic">
 <pre></pre>
 </div>
 <div created="20210628211954640" modified="20210714123715195" tags="Algebra" title="Module">
 <pre></pre>
 </div>
+<div created="20210805174307519" modified="20210805174323880" tags="[[Probability Theory]]" title="Negative Binomial Distributions">
+<pre></pre>
+</div>
+<div created="20210805173035888" modified="20210805173517877" tags="Contents" title="Probability Theory">
+<pre></pre>
+</div>
 <div created="20210714125518726" modified="20210714125528969" tags="Contents" title="Riemann Surfaces">
+<pre></pre>
+</div>
+<div created="20210728194338422" modified="20210801132717663" tags="Analysis [[Measure Theory]]" title="Sets not Lebesgue measurable">
 <pre></pre>
 </div>
 <div created="20201227211706277" modified="20210628211728693" tags="" title="Tensor Product of Vector Spaces">
